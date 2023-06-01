@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="571384ec-05ea-42f5-a52c-e6bb7eb5802c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from data_kasus_phi]]>
+	</queryString>
+	<field name="ID_Klien" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Kasus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_Kasus" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Status_Kasus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="114" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e9b482d7-f26f-4643-b011-1e31f483596d" x="183" y="50" width="179" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" size="12"/>
+				</textElement>
+				<text><![CDATA[AZP & ASSOCIATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="18ba290f-0583-431d-9aae-a0a77319014e" x="183" y="10" width="179" height="26"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" size="18"/>
+				</textElement>
+				<text><![CDATA[Data Kasus PHI]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="c8b863b1-a940-4f42-bd6f-95c246a79450" x="10" y="10" width="157" height="99"/>
+				<imageExpression><![CDATA["C:\\Lawyer\\src\\Images\\logo advokat 2.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1fcddcdc-1149-4328-859b-2bd260e2ff2b" x="0" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[ID_Klien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5e3611ff-e645-43fe-9d21-76cdffc09603" x="138" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[Nama_Kasus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="be3e9355-3513-4687-8dc7-7929d7223457" x="276" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[Tanggal_Kasus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9d07eaa4-47a8-48b1-a840-56f12689c1ed" x="414" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[Status_Kasus]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="05107188-d683-4f70-93a7-9285de775fc0" x="0" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ID_Klien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4bdd1275-7a26-4a28-bea6-2ae549e95373" x="138" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Nama_Kasus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3d544354-c0d6-4846-8fd8-857f3c496d52" x="276" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tanggal_Kasus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e1940710-3d7e-4520-8757-1a9a7f52d111" x="414" y="0" width="138" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Status_Kasus}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
